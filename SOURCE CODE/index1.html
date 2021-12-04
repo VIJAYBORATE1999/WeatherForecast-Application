@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weather App</title>
+    <style>
+    div.a:hover
+    {
+         -webkit-transform: scale(2,2);
+    }
+    div.b:hover
+    {
+         -webkit-transform: scale(1.4,1.4);
+    }
+    a.a:hover
+    {
+        -webkit-transform: scale(1.2,1.2);
+    }
+    </style>
+</head>
+
+<body background="backgroundimg.jpeg">
+    <div class="container-fluid">
+          <div class="app-main h-25">
+         <div class="searchInputBox">
+          <input type="text" id="input-box" class="input-box" style="font-size:35px" placeholder="Enter City name.."
+        autocomplete="off">
+        </div>
+    <div class="weather-body" style="font-size:20px">
+    <div class="">
+    <div class="d-none d-xl-block a " id="city"></div>
+    <div class="d-none d-xl-block b " id="date"></div>
+        </div>
+        <div class="weather-status">
+            <div class="temp a" style="font-size:30px" id="temp"> </div>
+            <div class="min-max d-none d-xl-block b" id="min-max"> </div>
+            <div class="weather d-none d-xl-block b " id="weather"></div>
+            
+            <div class="img"></div>
+            <a href="index2.html" class="btn btn-primary  btn-xs btn-sm btn-lg active a" role="button" aria-pressed="true">Weather-Forecast</a>
+            <a href="index.html" class="btn btn-warning  btn-xs btn-sm btn-lg active a" role="button" aria-pressed="true">Back</a>
+        </div>
+    </div>
+ </div>
+</div>
+ 
+ <script src="app.js"></script>
+</body>
+</html>

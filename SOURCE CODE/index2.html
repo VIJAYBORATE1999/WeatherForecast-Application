@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+  background-image: url('backgroundimg.jpeg');
+  background-size: cover;
+    background-repeat: repeat;
+            }
+        h1.a:hover
+        {
+             -webkit-transform: scale(1.2,1.2);
+        }
+        h2.a:hover
+        {
+             -webkit-transform: scale(1.1,1.1);
+        }
+        
+       button.a:hover
+        {
+            -webkit-transform: scale(1.2,1.2);
+        }
+        div.a:hover
+        {
+             -webkit-transform: scale(1.2,1.2);
+        }
+        </style>
+</head>
+<body onload="DefaultScreen()">
+    <center>
+        <h1 id="Para1" class="a "style="font-size:40px;color:rgb(252, 252, 252);">5 Days Weather Forecast</h1>
+        <p id="inputContainer"  style="font-size:30px;color:rgb(0, 0, 0);">City: <input type="text" id="cityInput" style="border-radius: 6px"></p><BR>
+        <button type="button"  class="btn btn-primary a" onclick="GetInfo()" style="border-radius: 6px ;">Click Me</button>
+        <button type="button"  class="btn btn-warning a" onclick="window.location.href = 'index1.html';" style="border-radius: 6px ;">Back</button>
+            
+        <h2 id="cityName" class="a d-none d-xl-block"></h2>
+    </center>
+    <div class="container" id = "weatherContainer iconsContainer">
+     
+            <div class="row">
+            
+                <div class = "icons d-none d-xl-block a">
+                
+                <p class="weather" id="day1" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p class="minValues" id="day1Min" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                <p class="maxValues" id="day1Max" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                
+                </div>
+            
+                <div class = "icons col-xs-2 offset-md-2 a" >
+                
+                <p class="weather" id="day2" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p class="minValues" id="day2Min" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                <p class="maxValues" id="day2Max" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                
+                 </div>
+            
+                <div class = "icons col-xs-2 offset-md-2 a">
+                
+                <p class="weather" id="day3" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p class="minValues" id="day3Min" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                <p class="maxValues" id="day3Max" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                
+                </div>
+           
+               <div class = "icons col-xs-2 offset-md-2 a">
+                
+                <p class="weather" id="day4" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p class="minValues" id="day4Min" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                <p class="maxValues" id="day4Max" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+            
+                </div>
+            
+                <div class = "icons col-xs-2 offset-md-2 a">
+                
+                <p class="weather" id="day5" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p class="minValues" id="day5Min" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                <p class="maxValues" id="day5Max" style="font-size:15px ;color:rgb(250, 252, 249);font-weight:bolder;">Loading...</p>
+                
+                </div>
+        </div>
+        
+</div>
+
+
+        <script src="main.js"></script>
+
+
+</body>
+</html>
